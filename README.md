@@ -23,7 +23,15 @@ pip install -r requirements.txt
 Modifiez le fichier ".env" pour y renseigner les champs username et password.
 
 
-# Lancement du script
+# Lancement du script de démo
 ```bash
-python3 sshcon.py
+python3 demo.py
+```
+
+# Import dans un script python
+```python
+from sshcon import SshConnector
+
+with SshConnector(*credentials) as ssh:
+    pass
 ```
